@@ -1,0 +1,53 @@
+GET https://project1-b45s.onrender.com/
+
+###
+
+GET https://project1-b45s.onrender.com/contacts 
+
+###
+
+GET https://project1-b45s.onrender.com/contacts/6501111afdaf527001eabce6 
+
+###
+
+GET https://project1-b45s.onrender.com/contacts/65011144fdaf527001eabce7
+
+###
+
+GET https://project1-b45s.onrender.com/contacts/6501100afdaf527001eabce2
+
+###
+
+GET http://localhost:3000/contacts 
+
+###
+
+
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jack",
+    "lastName": "Sparrow",
+    "email": "theSparrow@test.com",
+    "favoriteColor": "brown",
+    "birthday": "06/19/1985"
+}
+
+###
+
+PUT http://localhost:3000/contacts/6501111afdaf527001eabce6 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Marilia",
+    "lastName": "Oliveira",
+    "email": "mariliaw@test.com",
+    "favoriteColor": "purple",
+    "birthday": "06/19/1985"
+}
+
+###
+
+DELETE http://localhost:3000/contacts/6508fbe02af9941c11fca183 HTTP/1.1
+content-type: application/json
