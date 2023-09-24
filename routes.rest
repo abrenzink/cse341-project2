@@ -1,35 +1,21 @@
-GET https://project1-b45s.onrender.com/
-
-###
-
-GET https://project1-b45s.onrender.com/contacts 
-
-###
-
-GET https://project1-b45s.onrender.com/contacts/6501111afdaf527001eabce6 
-
-###
-
-GET https://project1-b45s.onrender.com/contacts/65011144fdaf527001eabce7
-
-###
-
-GET https://project1-b45s.onrender.com/contacts/6501100afdaf527001eabce2
-
-###
+### Local routes
 
 GET http://localhost:3000/contacts 
 
 ###
 
+GET http://localhost:3000/contacts/6501111afdaf527001eabce HTTP/1.1
+content-type: application/json
+
+###
 
 POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Jack",
-    "lastName": "Sparrow",
-    "email": "theSparrow@test.com",
+    "firstName": "Jack2",
+    "lastName": "Sparrow2",
+    "email": "theSparrow2@test.com",
     "favoriteColor": "brown",
     "birthday": "06/19/1985"
 }
@@ -50,4 +36,46 @@ content-type: application/json
 ###
 
 DELETE http://localhost:3000/contacts/6508fbe02af9941c11fca183 HTTP/1.1
+content-type: application/json
+
+########################################################################################
+
+### Published routes
+
+GET https://project2-cgay.onrender.com/contacts 
+
+###
+
+GET https://project2-cgay.onrender.com/contacts/6501111afdaf527001eabce HTTP/1.1
+content-type: application/json
+
+###
+
+POST https://project2-cgay.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jack",
+    "lastName": "Sparrow",
+    "email": "theSparrow@test.com",
+    "favoriteColor": "brown",
+    "birthday": "06/19/1985"
+}
+
+###
+
+PUT https://project2-cgay.onrender.com/contacts/6501111afdaf527001eabce6 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Marilia",
+    "lastName": "Oliveira",
+    "email": "mariliaw@test.com",
+    "favoriteColor": "purple",
+    "birthday": "06/19/1985"
+}
+
+###
+
+DELETE https://project2-cgay.onrender.com/contacts/6508fbe02af9941c11fca183 HTTP/1.1
 content-type: application/json
