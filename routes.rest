@@ -4,7 +4,7 @@ GET http://localhost:3000/contacts
 
 ###
 
-GET http://localhost:3000/contacts/6501111afdaf527001eabce HTTP/1.1
+GET http://localhost:3000/contacts/650f87f45c20df689a0b8fd6 HTTP/1.1
 content-type: application/json
 
 ###
@@ -22,20 +22,20 @@ content-type: application/json
 
 ###
 
-PUT http://localhost:3000/contacts/6501111afdaf527001eabce6 HTTP/1.1
+PUT http://localhost:3000/contacts/650f87f45c20df689a0b8fd6 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Marilia",
-    "lastName": "Oliveira",
+    "firstName": "James",
+    "lastName": "Potter",
     "email": "mariliaw@test.com",
-    "favoriteColor": "purple",
-    "birthday": "06/19/1985"
+    "favoriteColor": "red",
+    "birthday": "03/27/1960"
 }
 
 ###
 
-DELETE http://localhost:3000/contacts/6508fbe02af9941c11fca183 HTTP/1.1
+DELETE http://localhost:3000/contacts/650f87f45c20df689a0b8fd6 HTTP/1.1
 content-type: application/json
 
 ########################################################################################
@@ -46,7 +46,7 @@ GET https://project2-cgay.onrender.com/contacts
 
 ###
 
-GET https://project2-cgay.onrender.com/contacts/6501111afdaf527001eabce HTTP/1.1
+GET https://project2-cgay.onrender.com/contacts/650f87f45c20df689a0b8fd6 HTTP/1.1
 content-type: application/json
 
 ###
@@ -64,18 +64,18 @@ content-type: application/json
 
 ###
 
-PUT https://project2-cgay.onrender.com/contacts/6501111afdaf527001eabce6 HTTP/1.1
+PUT https://project2-cgay.onrender.com/contacts/650f87f45c20df689a0b8fd6 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Marilia",
-    "lastName": "Oliveira",
+    "firstName": "James",
+    "lastName": "Potter",
     "email": "mariliaw@test.com",
-    "favoriteColor": "purple",
-    "birthday": "06/19/1985"
+    "favoriteColor": "red",
+    "birthday": "03/27/1960"
 }
 
 ###
 
-DELETE https://project2-cgay.onrender.com/contacts/6508fbe02af9941c11fca183 HTTP/1.1
+DELETE https://project2-cgay.onrender.com/contacts/650f87f45c20df689a0b8fd6 HTTP/1.1
 content-type: application/json
